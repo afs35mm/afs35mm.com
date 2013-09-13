@@ -738,20 +738,20 @@ html, body, #wrapper {
 
 #wrapper {
   height: 100%; }
-  #wrapper #side {
-    width: 25%;
-    height: 100%;
-    background-color: blue;
-    position: absolute; }
   #wrapper #main {
-    position: absolute;
-    width: 75%;
-    margin-left: 25%; }
-  #wrapper .item {
-    background-color: yellow;
-    border: 1px solid red;
-    width: 25%; }
-
-@media screen and (max-width: 720px) {
-  #wrapper .item {
-    width: 100%; } }
+    height: 100%;
+    width: 100%; }
+    #wrapper #main #container {
+      padding: 5px;
+      margin: 0 auto;
+      border: 2px solid black; }
+    #wrapper #main .item {
+      float: left;
+      background: #CCC;
+      margin: 5px;
+      width: 50px;
+      height: 50px; }
+    #wrapper #main .item.w2 {
+      width: 110px; }
+    #wrapper #main .item.h2 {
+      height: 110px; }

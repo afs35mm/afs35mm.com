@@ -7,28 +7,36 @@ body{
 html, body, #wrapper {height:100%;}
 #wrapper{
 	height:100%;
-	#side{
-		width:$side-width;
-		height:100%;
-		background-color:blue;
-		position:absolute;
-	}
 	#main{
-		position:absolute;
-		width:75%;
-		margin-left:$side-width;	
+		height:100%;
+		width:100%;
+		#container {
+			padding: 5px;
+			margin: 0 auto;
+			border: 2px solid black;
+		}
+
+		.item {
+			float: left;
+			background: #CCC;
+			margin: 5px;
+			width: 50px;
+			height: 50px;
+		}
+		.item.w2 { width: 110px; }
+		.item.h2 { height: 110px; }
+
 	}
-	.item{
-		background-color:yellow;
-		border:1px solid red;
-		width:25%;
-	}
-}
+} 
 
 @media screen and (max-width: 720px) {
 	#wrapper{
 		.item{
-			width:100%;
-		}
-	}
-}
+			&.col-1, &.col-2, &.row-1, &.row-2{
+				// width: 50%;
+				// height: 0;
+				// padding-bottom: 50%;
+			}
+		} 
+	} 
+}  

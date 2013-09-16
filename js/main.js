@@ -4,6 +4,10 @@ AFS.App = (function(){
 
 	var config = {
 		$container: $('#container'),
+		c: document.getElementById("canvas"),
+		ctx: document.getElementById("canvas").getContext("2d"),
+		canvasWidth: $('#canvas').width(),
+		canvasHeight: $('#canvas').height(),
 	};
 
 	var bindDomEvents = function(){
@@ -29,6 +33,9 @@ AFS.App = (function(){
 		makePacketry();
 		config.$container.packery('unbindResize');
 		bindDomEvents();
+
+		// config.ctx.fillStyle="blue";
+		// config.ctx.fillRect(0,0,config.canvasWidth,config.canvasHeight);
 	};
 
 	return {

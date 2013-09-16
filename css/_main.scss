@@ -1,28 +1,29 @@
-$side-width:25%;
 * { box-sizing: border-box }
 body{
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 }
-html, body, #wrapper {height:100%;}
-#wrapper{
+html, body, #wrapper {height:100%;background: #fafafa;}
+#canvas{
+	width:100%;
 	height:100%;
+	position:fixed;
+}
+#wrapper{
 	#main{
-		height:100%;
+		padding-top:26%;
 		width:100%;
 		#container {
 			margin: 0 auto;
-			background-color:blue;
 			width:99%;
 		}
 		.item {
-			background: #CCC;
-			border:1px solid black;
-			width: 24%;
+			background: #fff;
+			width: 32%;
 			margin:.5%;
 			height: 120px;
 			&.w2{
-				width:50%;
+				//width:50%;
 			}
 			&.h2{
 				height:240px;
@@ -31,7 +32,7 @@ html, body, #wrapper {height:100%;}
 	}
 } 
 /**
-XXL LAYOUT - 5 COLUMNS
+XXL LAYOUT - 4 COLUMNS
 **/
 @media screen and (min-width: 1020px) {
 	#wrapper{
@@ -39,7 +40,7 @@ XXL LAYOUT - 5 COLUMNS
 			.item{
 				
 				&.w2, &.w1, &.h2, &.h1{
-					width: 19%;
+					width: 24%;
 				}
 			} 
 		}

@@ -742,16 +742,29 @@ html, body, #wrapper {
     height: 100%;
     width: 100%; }
     #wrapper #main #container {
-      padding: 5px;
       margin: 0 auto;
-      border: 2px solid black; }
+      background-color: blue;
+      width: 99%; }
     #wrapper #main .item {
-      float: left;
       background: #CCC;
-      margin: 5px;
-      width: 50px;
-      height: 50px; }
-    #wrapper #main .item.w2 {
-      width: 110px; }
-    #wrapper #main .item.h2 {
-      height: 110px; }
+      border: 1px solid black;
+      width: 24%;
+      margin: .5%;
+      height: 120px; }
+      #wrapper #main .item.w2 {
+        width: 50%; }
+      #wrapper #main .item.h2 {
+        height: 240px; }
+
+/**
+XXL LAYOUT - 5 COLUMNS
+**/
+@media screen and (min-width: 1020px) {
+  #wrapper #main .item.w2, #wrapper #main .item.w1, #wrapper #main .item.h2, #wrapper #main .item.h1 {
+    width: 19%; } }
+/**
+SM LAYOUT - 2 COLUMNS
+**/
+@media screen and (max-width: 720px) {
+  #wrapper #main .item.w2, #wrapper #main .item.w1, #wrapper #main .item.h2, #wrapper #main .item.h1 {
+    width: 49%; } }

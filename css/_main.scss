@@ -11,32 +11,54 @@ html, body, #wrapper {height:100%;}
 		height:100%;
 		width:100%;
 		#container {
-			padding: 5px;
 			margin: 0 auto;
-			border: 2px solid black;
+			background-color:blue;
+			width:99%;
 		}
-
 		.item {
-			float: left;
 			background: #CCC;
-			margin: 5px;
-			width: 50px;
-			height: 50px;
+			border:1px solid black;
+			width: 24%;
+			margin:.5%;
+			height: 120px;
+			&.w2{
+				width:50%;
+			}
+			&.h2{
+				height:240px;
+			}
 		}
-		.item.w2 { width: 110px; }
-		.item.h2 { height: 110px; }
-
 	}
 } 
-
-@media screen and (max-width: 720px) {
+/**
+XXL LAYOUT - 5 COLUMNS
+**/
+@media screen and (min-width: 1020px) {
 	#wrapper{
-		.item{
-			&.col-1, &.col-2, &.row-1, &.row-2{
-				// width: 50%;
-				// height: 0;
-				// padding-bottom: 50%;
-			}
-		} 
+		#main{
+			.item{
+				
+				&.w2, &.w1, &.h2, &.h1{
+					width: 19%;
+				}
+			} 
+		}
 	} 
 }  
+
+/**
+SM LAYOUT - 2 COLUMNS
+**/
+@media screen and (max-width: 720px) {
+	#wrapper{
+		#main{
+			.item{
+				
+				&.w2, &.w1, &.h2, &.h1{
+					width: 49%;
+				}
+			} 
+		}
+	} 
+}  
+

@@ -4,10 +4,11 @@ AFS.App = (function(){
 
 	var config = {
 		$container: $('#container'),
-		c: document.getElementById("canvas"),
+		containerWidth: $('#container').width(),
+		//c: document.getElementById("canvas"),
 		//ctx: document.getElementById("canvas").getContext("2d"),
-		canvasWidth: $('#canvas').width(),
-		canvasHeight: $('#canvas').height(),
+		//canvasWidth: $('#canvas').width(),
+		//canvasHeight: $('#canvas').height(),
 	};
 
 	var bindDomEvents = function(){
@@ -25,7 +26,8 @@ AFS.App = (function(){
 	};
 
 	var resizeContainer = function(){
-		config.$container.width( $(window).width() * .99 );
+		console.log($(window).width(), config.containerWidth);
+		config.$container.width( $(window).width() );
 	};
 
 	var init = function(){

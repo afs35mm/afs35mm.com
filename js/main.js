@@ -5,7 +5,7 @@ AFS.App = (function(){
 	var config = {
 		$container: $('#container'),
 		c: document.getElementById("canvas"),
-		ctx: document.getElementById("canvas").getContext("2d"),
+		//ctx: document.getElementById("canvas").getContext("2d"),
 		canvasWidth: $('#canvas').width(),
 		canvasHeight: $('#canvas').height(),
 	};

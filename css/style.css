@@ -788,11 +788,31 @@ html, body, #wrapper {
         height: 180px;
         float: left;
         background: white;
-        border: 2px solid #d6d6d6; }
+        border: 2px solid #d6d6d6;
+        display: none;
+        overflow: hidden; }
+        #wrapper #main #container .item .bg {
+          background-color: black;
+          background-color: rgba(0, 0, 0, 0.3);
+          color: #000;
+          padding: 5%;
+          margin-top: -25%;
+          transition: margin-top 0.5s ease;
+          -webkit-transition: margin-top 0.5s ease;
+          -moz-transition: margin-top 0.5s ease;
+          -o-transition: margin-top 0.5s ease; }
+          #wrapper #main #container .item .bg h3 {
+            font-weight: 700;
+            font-size: 1em;
+            padding-bottom: .2em; }
+          #wrapper #main #container .item .bg h4 {
+            font-size: .8em; }
         #wrapper #main #container .item.w2 {
           width: 66%; }
         #wrapper #main #container .item.h2 {
           height: 360px; }
+        #wrapper #main #container .item.hover .bg {
+          margin-top: 0; }
 
 /**
 XXL LAYOUT - 4 COLUMNS

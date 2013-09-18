@@ -65,6 +65,27 @@ html, body, #wrapper {height:100%;background: $grey;height:100%;}
 				float: left;
 				background: $white;
 				border: 2px solid $grey;
+				display:none;
+				overflow:hidden;
+				.bg{
+					background-color: rgb(0, 0, 0);
+    				background-color: rgba(0, 0, 0, 0.3);
+    				color:#000;
+    				padding:5%;
+    				margin-top:-25%;
+    				transition: margin-top 0.5s ease;
+					-webkit-transition: margin-top 0.5s ease; 
+				    -moz-transition: margin-top 0.5s ease; 
+				    -o-transition: margin-top 0.5s ease;
+					h3{
+						font-weight:700;
+						font-size:1em;
+						padding-bottom:.2em;
+					}
+					h4{
+						font-size:.8em;
+					}
+				}
 				&.w2{
 					width:  66%;
 				}
@@ -76,6 +97,9 @@ html, body, #wrapper {height:100%;background: $grey;height:100%;}
 				}
 				&.h4{
 					//height: 180px;
+				}
+				&.hover .bg{
+					margin-top:0;
 				}
 			}
 		}

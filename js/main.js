@@ -18,6 +18,7 @@ AFS.App = (function(){
 		  itemSelector: '.item',
 		  isResizeBound : false,
 		});
+		
 	};
 	var init = function(){
 		bindDomEvents();

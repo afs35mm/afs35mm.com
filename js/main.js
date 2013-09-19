@@ -6,6 +6,8 @@ AFS.App = (function(){
 		container : document.querySelector('#container'),
 		containerWidth: null,
 		hasTouch: Modernizr.touch,
+		$item: $('.projectItem'),
+		menuShown: null,
 	};
 
 	var bindDomEvents = function(){
@@ -13,24 +15,41 @@ AFS.App = (function(){
 			config.containerWidth = $('#container').width();
 			makePacketry();
 		});
-		$( document ).mousemove(function( event ) {
-			var fillPercentage = (( event.pageX  ) / config.containerWidth );
-			//console.log(fillPercentage);
-			//$('circle').attr('fill-opacity', fillPercentage );
-		});
-		$('.item').on('mouseenter mouseleave', addHoverClass);
+		// $( document ).mousemove(function( event ) {
+		// 	var fillPercentage = (( event.pageX  ) / config.containerWidth );
+		// 	console.log(fillPercentage);
+		// 	$('circle').attr('fill-opacity', fillPercentage );
+		// });
+
+		if(!config.hasTouch){
+			config.$item.hover(bgShowAndHide, bgShowAndHide);
+			//hideBG();
+			config.$item.children('.bg').addClass('showHideBG');
+		}
 	};
 
-	var addHoverClass = function(){
-		var $this = $(this);
-		if(!config.hasTouch){
-			//$this.toggleClass('hover');	
-			console.log($this.children('bg'));
-			$this.children('.bg').animate({ marginTop: '0px'},80);
+	var bgShowAndHide = function(){
+		$bg = $(this).children('.bg'),
+		bgHeight = $bg.outerHeight();
+
+		if(Modernizr.csstransitions){
+			$bg.addClass('cssTransitions').toggleClass('showHideBG');
 		}else{
-			//$this.children('bg').animate('marginTop', 0);
+			if(config.menuShown != true){
+				$bg.animate({'marginTop': 0});
+				config.menuShown = true;
+			}else{
+				$bg.animate({'marginTop': '-' + bgHeight });
+				config.menuShown = false;
+			}
 		}
-		
+	};
+
+	var hideBG = function(){
+		config.$item.children('.bg').each(function(){
+			var bgHeight = $(this).outerHeight();
+			$(this).css('marginTop', -bgHeight );
+		});
 	};
 
 	var makePacketry = function(){
@@ -49,7 +68,7 @@ AFS.App = (function(){
 	};
 
 	return {
-		init: init
+		init: init,
 	};
 	
 

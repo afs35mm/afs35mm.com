@@ -742,9 +742,7 @@ html {
   overflow-y: scroll; }
 
 html, body, #wrapper {
-  height: 100%;
-  background: #d6d6d6;
-  height: 100%; }
+  background: #d6d6d6; }
 
 #canvas {
   width: 100%;
@@ -791,16 +789,23 @@ html, body, #wrapper {
         border: 2px solid #d6d6d6;
         display: none;
         overflow: hidden; }
+        #wrapper #main #container .item img {
+          max-width: 100%;
+          width: 100%; }
         #wrapper #main #container .item .bg {
           background-color: black;
           background-color: rgba(0, 0, 0, 0.3);
           color: #000;
           padding: 5%;
-          margin-top: -25%;
-          transition: margin-top 0.5s ease;
-          -webkit-transition: margin-top 0.5s ease;
-          -moz-transition: margin-top 0.5s ease;
-          -o-transition: margin-top 0.5s ease; }
+          position: absolute;
+          width: 100%; }
+          #wrapper #main #container .item .bg.showHideBG {
+            margin-top: -30%; }
+          #wrapper #main #container .item .bg.cssTransitions {
+            transition: margin-top 0.5s ease;
+            -webkit-transition: margin-top 0.5s ease;
+            -moz-transition: margin-top 0.5s ease;
+            -o-transition: margin-top 0.5s ease; }
           #wrapper #main #container .item .bg h3 {
             font-weight: 700;
             font-size: 1em;
@@ -813,6 +818,13 @@ html, body, #wrapper {
           height: 360px; }
         #wrapper #main #container .item.hover .bg {
           margin-top: 0; }
+        #wrapper #main #container .item.projectItem {
+          cursor: pointer; }
+
+#footer {
+  height: 4em;
+  width: 100%;
+  background: #191919; }
 
 /**
 XXL LAYOUT - 4 COLUMNS

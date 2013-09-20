@@ -15,11 +15,10 @@ AFS.App = (function(){
 			config.containerWidth = $('#container').width();
 			makePacketry();
 		});
-		// $( document ).mousemove(function( event ) {
-		// 	var fillPercentage = (( event.pageX  ) / config.containerWidth );
-		// 	console.log(fillPercentage);
-		// 	$('circle').attr('fill-opacity', fillPercentage );
-		// });
+		
+		$('.projectItem').on('click', function(){
+			AFS.inject.showStage();
+		});
 
 		if(!config.hasTouch){
 			config.$item.hover(bgShowAndHide, bgShowAndHide);

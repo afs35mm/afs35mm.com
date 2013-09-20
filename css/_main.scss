@@ -21,7 +21,7 @@ html, body, #wrapper {background: $grey;}
 	height:100%;
 	position:fixed;
 }
-#head{
+#head{  
 	background-color:#fff;
 	position:fixed;
 	vertical-align:middle;
@@ -38,13 +38,26 @@ html, body, #wrapper {background: $grey;}
 		bottom: 0;
 		left: 0;
 		margin: auto 1%;
-		position: absolute;
+		position: absolute; 
 		top: 0;
 	}	
 	h1{
 		font-size:1.3em;
 		padding: 1.8em 0 0 4.5em;
-
+		color:$white;
+		display:inline-block;
+	}
+	.container{
+		float: right;
+		text-align: right;
+		color: $white;
+		padding: 2.4em 1% 0 0;
+		h2,h3{
+			display:block;
+		}
+		h2{
+			padding-bottom:.1em;
+		}
 	}
 }
 #wrapper{

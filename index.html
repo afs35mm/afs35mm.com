@@ -23,7 +23,7 @@
         <!-- <canvas id="canvas"></canvas> -->
         
         <div id="head" class="clearfix">
-            
+            <a href="/">
             <?xml version="1.0" encoding="utf-8"?>
                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                 <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
@@ -33,7 +33,8 @@
                         C0,3229.905,3229.907,0,7199.889,0c3970.207,0,7200.113,3229.905,7200.113,7200.116V14406.383z M7199.889,4085.691
                         c-1717.156,0-3114.2,1397.16-3114.2,3114.425c0,1717.152,1397.044,3114.196,3114.2,3114.196l3114.425,2.736V7200.116
                         C10314.313,5482.852,8917.154,4085.691,7199.889,4085.691z"/>
-            </g>                  
+            </g>        
+            </a>          
             <h1>Afs35mm</h1>  
             <div class="container">
                 <h2>Creative Developer</h2>
@@ -49,10 +50,47 @@
         
         <div id="wrapper">
             <div id="padder">
-                
             </div>
             <div id="stage">
-                
+                <div id="X">
+                        X
+                    </div>
+                <div id="inner">
+                    <script id="projectInfo" type="text/x-handlebars-template">
+                        <h5>{{name}}</h5>
+                        <h6>
+                            {{description}}
+                        </h6>
+                        <ul>
+                            {{#each roles}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <a target="_blank" href="{{link}}">Visit Project</a>
+                        <div>
+                            {{#each images}}
+                                <img src="{{this}}" />
+                            {{/each}}
+                        </div>
+                    </script>
+
+                        <!-- <h6>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie faucibus aliquam. Vestibulum tempus, libero in semper euismod, augue enim rhoncus eros, a blandit leo massa ut lectus. Vestibulum in pulvinar nisl. Nam commodo, tortor at accumsan lac.
+                        </h6>
+                        
+                        <ul>
+                            <li>UX</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SASS</li>
+                        </ul>
+                        
+                        <a href="#">GO TO PROECT</a>
+                    
+                        <div id="images">
+                            
+                        </div> -->
+                </div>         
             </div>
             <div id="main">
                 <div id="container" class="clearfix">
@@ -62,17 +100,17 @@
                     </div>
                     
 
-                    <div class="item projectItem">
+                    <div class="item projectItem" data-project="verizon">
                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
+                            <h3>Verizon</h3>
+                            <h4>Yourguide iPad Web App</h4>    
                         </div>
-                        <img src="http://placekitten.com/600/600" alt="">
+                        <img src="http://placekitten.com/600/600">
                     </div>
-                    <div class="item projectItem">
+                    <div class="item projectItem" data-project="olympus">
                          <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
+                            <h3>Olympus</h3>
+                            <h4>OMD Product Launch</h4>    
                         </div>
                         <img src="http://placekitten.com/100/100" alt="">
                     </div>
@@ -125,90 +163,6 @@
                         </div>
                         <img src="http://placekitten.com/245/625" alt="">
                     </div>
-                    <!-- <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item h2 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item w2 h2 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item w2 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item h2 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item h3 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item h2 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div>
-                    <div class="item h2 projectItem">
-                         <div class="bg">
-                            <h3>XYZ ABC1234</h3>
-                            <h4>superfagilistic</h4>    
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -218,6 +172,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/packery.js"></script>
+        <script src="js/handlebars.js"></script>
+        <script src="js/projectsJSON.js"></script>
         <script src="js/main.js"></script>
         <script src="js/injectTemplate.js"></script>
         

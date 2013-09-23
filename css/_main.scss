@@ -69,7 +69,59 @@ html, body, #wrapper {background: $grey;}
 		background-color:#000;
 	}
 	#stage{
-		
+		display:none;
+		#X{
+			position:fixed;
+			font-family:sans-serif;
+			color:$white;
+			background:$black;
+			margin: 1em 0 0 0 ;
+			font-size:3em;
+			width:1em;
+			height:1em;
+			text-align:center;
+			cursor:pointer;
+		}
+		#inner{
+			width:80%;
+			margin: 0 auto;
+			text-align: center;
+			padding: 10% 0;
+			$padding-bottom: 3%;
+			h5{
+				font-size:1.3em;
+				padding-bottom:$padding-bottom;
+			}
+			h6{
+				font-size:1em;
+				padding-bottom:$padding-bottom;
+			}
+			ul{
+				padding-bottom:$padding-bottom;	
+				li{
+					display:inline;
+					margin: 0 .4em 0 0;
+					span{
+						margin: 0 0 0 .4em ;
+						color:#8F8F8F;
+					}
+				}
+			}
+			a{
+				color:$white;
+				text-decoration:none;
+				padding-bottom:$padding-bottom;
+				font-size:.8em;
+				padding:.4em;
+				background:$black;
+				text-transform:uppercase;
+
+			}
+			img{
+				margin-top:6%;
+				max-width:100%;
+			}
+		}
 	}
 	#main{
 		width:100%;

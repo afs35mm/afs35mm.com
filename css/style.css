@@ -788,6 +788,49 @@ html, body, #wrapper {
     height: 5.4em;
     width: 100%;
     background-color: #000; }
+  #wrapper #stage {
+    display: none; }
+    #wrapper #stage #X {
+      position: fixed;
+      font-family: sans-serif;
+      color: white;
+      background: #191919;
+      margin: 1em 0 0 0;
+      font-size: 3em;
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      cursor: pointer; }
+    #wrapper #stage #inner {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10% 0; }
+      #wrapper #stage #inner h5 {
+        font-size: 1.3em;
+        padding-bottom: 3%; }
+      #wrapper #stage #inner h6 {
+        font-size: 1em;
+        padding-bottom: 3%; }
+      #wrapper #stage #inner ul {
+        padding-bottom: 3%; }
+        #wrapper #stage #inner ul li {
+          display: inline;
+          margin: 0 .4em 0 0; }
+          #wrapper #stage #inner ul li span {
+            margin: 0 0 0 0.4em;
+            color: #8F8F8F; }
+      #wrapper #stage #inner a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 3%;
+        font-size: .8em;
+        padding: .4em;
+        background: #191919;
+        text-transform: uppercase; }
+      #wrapper #stage #inner img {
+        margin-top: 6%;
+        max-width: 100%; }
   #wrapper #main {
     width: 100%; }
     #wrapper #main #container {

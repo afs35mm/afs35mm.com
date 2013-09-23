@@ -17,7 +17,11 @@ AFS.App = (function(){
 		});
 		
 		$('.projectItem').on('click', function(){
-			AFS.inject.showStage();
+			AFS.inject.showProject( $(this).data('project') );
+		});
+
+		$('#X').on('click', function(){
+			AFS.inject.toggleStage( );
 		});
 
 		if(!config.hasTouch){

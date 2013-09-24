@@ -6,12 +6,6 @@ AFS.inject = (function(){
 		stage: $('#stage'),
 	};
 
-	var data = {
-	  name: "Jack",
-	  date: "12/04/12",
-	  comment: "This is a really awesome tutorial. Thanks."
-	}; 
-
 	var showProject = function(projectID){
 	 	toggleStage();
 

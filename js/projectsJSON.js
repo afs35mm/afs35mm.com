@@ -11,14 +11,12 @@ AFS.projects = {
 			'JS', 
 		],
 		images: [
-			'img/verizon/verizon_1.png',
-			'img/verizon/verizon_2.png',
-			'img/verizon/verizon_3.png',
-			'img/verizon/verizon_4.png',
-			'img/verizon/verizon_5.png',
-			'img/verizon/verizon_6.png',
-			'img/verizon/verizon_7.png',
-			'img/verizon/verizon_8.png',
+			'img/verizon/verizon_1.jpg',
+			'img/verizon/verizon_2.jpg',
+			'img/verizon/verizon_3.jpg',
+			'img/verizon/verizon_4.jpg',
+			'img/verizon/verizon_5.jpg',
+			'img/verizon/verizon_6.jpg',
 		]
 	},
 	olympus :{
@@ -32,14 +30,12 @@ AFS.projects = {
 			'PHP' 
 		],
 		images: [
-			'img/verizon/verizon_1.png',
-			'img/verizon/verizon_2.png',
-			'img/verizon/verizon_3.png',
-			'img/verizon/verizon_4.png',
-			'img/verizon/verizon_5.png',
-			'img/verizon/verizon_6.png',
-			'img/verizon/verizon_7.png',
-			'img/verizon/verizon_8.png',
+			'img/olympus/olympus_1.jpg',
+			'img/olympus/olympus_2.png',
+			'img/olympus/olympus_3.jpg',
+			'img/olympus/olympus_4.jpg',
+			'img/olympus/olympus_5.jpg',
+			'img/olympus/olympus_6.png',
 		]
 	}
 };

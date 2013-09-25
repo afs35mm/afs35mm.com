@@ -150,6 +150,7 @@ html, body, #wrapper {background: $grey;}
     				padding:5%;
     				position:absolute;
     				width:100%;
+    				z-index:11;
 				    &.showHideBG{
 				    	margin-top:-30%;
 				    }
@@ -168,21 +169,29 @@ html, body, #wrapper {background: $grey;}
 						font-size:.8em;
 					}
 				}
-				.box{
-					margin-top: 75%; 
+				.box *{
+					position: absolute;
+					z-index:10;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
 				}
-				&.w2{
-					//width:  66%;
+				.box:before {
+					// THIS IS THE ASPECT RATIO 100% = 1:1
+					padding-top: 75%; 
+					content: "";
+					display: block;
+				}
+				&.doubleSize{
+					width:  66%;
 				}
 				&.h2{
-					//height: 360px;
+					.box:before {
+						padding-top: 152%; 
+					}
 				}
-				&.h3{
-					//height: 130px; 
-				}
-				&.h4{
-					//height: 180px;
-				}
+				
 				&.hover .bg{
 					margin-top:0;
 				}
@@ -216,7 +225,7 @@ XXL LAYOUT - 4 COLUMNS
 			#container{
 				.item{
 					width: 25%;
-					&.w2 {
+					&.doubleSize {
 						width: 50%;
 					}
 				}
@@ -234,7 +243,7 @@ SM LAYOUT - 2 COLUMNS
 			#container{
 				.item{
 					width: 50%;
-					&.w2 {
+					&.doubleSize {
 						width: 50%;
 					}
 				}

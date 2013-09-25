@@ -837,12 +837,12 @@ html, body, #wrapper {
       max-width: 100%; }
       #wrapper #main #container .item {
         width: 33%;
-        height: 180px;
         float: left;
         background: white;
         border: 2px solid #d6d6d6;
         display: none;
-        overflow: hidden; }
+        overflow: hidden;
+        position: relative; }
         #wrapper #main #container .item img {
           max-width: 100%;
           width: 100%;
@@ -868,10 +868,8 @@ html, body, #wrapper {
             padding-bottom: .2em; }
           #wrapper #main #container .item .bg h4 {
             font-size: .8em; }
-        #wrapper #main #container .item.w2 {
-          width: 66%; }
-        #wrapper #main #container .item.h2 {
-          height: 360px; }
+        #wrapper #main #container .item .box {
+          margin-top: 75%; }
         #wrapper #main #container .item.hover .bg {
           margin-top: 0; }
         #wrapper #main #container .item.projectItem {

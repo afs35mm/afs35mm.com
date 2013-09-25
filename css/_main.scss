@@ -129,12 +129,14 @@ html, body, #wrapper {background: $grey;}
 			max-width: 100%;
 			.item{
 				width:  33%;
-				height: 180px;
+				//height: 180px;
 				float: left;
 				background: $white;
 				border: 2px solid $grey;
 				display:none;
 				overflow:hidden;
+				//display: inline-block;
+    			position: relative;
 				img{
 					max-width:100%;
 					width:100%;
@@ -166,11 +168,14 @@ html, body, #wrapper {background: $grey;}
 						font-size:.8em;
 					}
 				}
+				.box{
+					margin-top: 75%; 
+				}
 				&.w2{
-					width:  66%;
+					//width:  66%;
 				}
 				&.h2{
-					height: 360px;
+					//height: 360px;
 				}
 				&.h3{
 					//height: 130px; 

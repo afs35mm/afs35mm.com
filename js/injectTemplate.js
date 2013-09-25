@@ -4,25 +4,48 @@ AFS.inject = (function(){
 
 	var config = {
 		stage: $('#stage'),
+		source: $("#projectInfo").html(),
+		stageOpen: false,
+		slideSpeed: 600,
+		currentProject: null,
 	};
 
 	var showProject = function(projectID){
-	 	toggleStage();
+	 
+	 	if(projectID == undefined || projectID == config.currentProject) return;
 
-		if(projectID == undefined) return;
-		
-		var source = $("#projectInfo").html();
-		var template = Handlebars.compile(source);
+	 	if(!config.stageOpen){
+	 		toggleStage();
+	 		injectTemplate(projectID);
+	 	}else{
+	 		toggleStage(function(){
+				injectTemplate(projectID);
+	 			toggleStage(function(){
+	 						
+	 			});
+	 		});
+	 	}
+	 	config.currentProject = projectID;
+
+	};
+
+	var injectTemplate = function(projectArg){
+		var template = Handlebars.compile(config.source);
 		$("#inner").empty();
-		console.log(AFS.projects[projectID]);
-		$("#inner").append(template(AFS.projects[projectID]));
-		//console.log(projects[projectID]);
+		$("#inner").append(template(AFS.projects[projectArg]));
 		$( "#inner ul" ).children().not(':last-child').append( '<span>/</span>' );
 	};
 
-	var toggleStage = function(){
-		$("html, body").animate({ scrollTop: 0 }, 600);
-		config.stage.slideToggle(600);
+
+	var toggleStage = function(callback){
+		$("html, body").animate({ scrollTop: 0 }, config.slideSpeed);
+		config.stage.slideToggle(config.slideSpeed,function(){
+			if(callback){
+				callback();
+			}	
+		});
+		config.stageOpen = !config.stageOpen;
+		config.currentProject = null;
 	};
 
 	return {

@@ -8,6 +8,7 @@ AFS.App = (function(){
 		hasTouch: Modernizr.touch,
 		$item: $('.projectItem'),
 		menuShown: null,
+		currentProject: null,
 	};
 
 	var bindDomEvents = function(){
@@ -17,7 +18,19 @@ AFS.App = (function(){
 		});
 		
 		$('.projectItem').on('click', function(){
-			AFS.inject.showProject( $(this).data('project') );
+			
+			//get the project id of project clicked
+			var projectClicked = $(this).data('project');
+			
+			//if its already on the stage, exit this function
+			//if(config.currentProject == projectClicked) return;
+
+			//if not, show the project
+			AFS.inject.showProject( projectClicked );
+
+			//set the current project eqal to proejct clicked
+			//config.currentProject = projectClicked;
+
 		});
 
 		$('#X').on('click', function(){

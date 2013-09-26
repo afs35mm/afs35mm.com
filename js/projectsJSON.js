@@ -94,7 +94,61 @@ AFS.projects = {
 		],
 		images: [
 			'https://s3.amazonaws.com/afs35mm/jeide_1.png',
+			'https://s3.amazonaws.com/afs35mm/jeide_2.jpg',
 			
+		]
+	},
+	goya :{
+		name: 'Goya',
+		description: "While working at digital agency Flightpath, developed Goya foods public consumer facing site. English and Spanish CMS localization as well as promotional email production and sends for various promotions and holidays.",
+		link: 'http://goya.com/',
+		roles: [
+			'Design',
+			'HTML',
+			'CSS',
+			'Email Production',
+		],
+		images: [
+			'https://s3.amazonaws.com/afs35mm/goya_1.png',
+			'https://s3.amazonaws.com/afs35mm/goya_2.jpg',
+			'https://s3.amazonaws.com/afs35mm/goya_3.png',
+			
+		]
+	},
+	homeagain :{
+		name: 'HomeAgain',
+		description: "While working at digital agency Flightpath, developed the consumer facing site for HomeAgain. Tested, deployed, tracked and analyzed large-scale email initiatives(59 million emails in 2010) through user-triggered, manual and automated processes.",
+		link: 'http://homeagain.com/',
+		roles: [
+			'Design',
+			'HTML',
+			'CSS',
+			'Email Production',
+		],
+		images: [
+			'https://s3.amazonaws.com/afs35mm/homeagain_1.png',
+			'https://s3.amazonaws.com/afs35mm/homeagain_2.jpg',
+			'https://s3.amazonaws.com/afs35mm/homeagain_3.png'
+			
+		]
+	},
+	corperate :{
+		name: 'Corperate Websites',
+		description: "Various Websites for select clients. Served all roles from inception to completion of sites.",
+		roles: [
+			'UX',
+			'Design',
+			'HTML',
+			'CSS',
+			'Project Manager',
+			'Client Services(?)',
+		],
+		images: [
+			'https://s3.amazonaws.com/afs35mm/corperate_1.png',
+			'https://s3.amazonaws.com/afs35mm/corperate_2.jpg',
+			'https://s3.amazonaws.com/afs35mm/corperate_5.jpg',
+			'https://s3.amazonaws.com/afs35mm/corperate_3.jpg',
+			'https://s3.amazonaws.com/afs35mm/corperate_4.jpg',
 		]
 	},
 };

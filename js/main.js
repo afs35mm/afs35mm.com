@@ -17,29 +17,19 @@ AFS.App = (function(){
 			makePacketry();
 		});
 		
-		$('.projectItem').on('click', function(){
-			
-			//get the project id of project clicked
+		$('.projectItem').on('click', function(e){
 			var projectClicked = $(this).data('project');
-			
-			//if its already on the stage, exit this function
-			//if(config.currentProject == projectClicked) return;
-
-			//if not, show the project
 			AFS.inject.showProject( projectClicked );
-
-			//set the current project eqal to proejct clicked
-			//config.currentProject = projectClicked;
-
+        	e.preventDefault();
 		});
 
 		$('#X').on('click', function(){
+			window.location.hash = '';
 			AFS.inject.toggleStage( );
 		});
 
 		if(!config.hasTouch){
 			config.$item.hover(bgShowAndHide, bgShowAndHide);
-			//hideBG();
 			config.$item.children('.bg').addClass('showHideBG');
 		}
 	};
@@ -81,6 +71,11 @@ AFS.App = (function(){
 		$('.item').fadeIn();
 		bindDomEvents();
 		makePacketry();
+		if(window.location.hash != ''){
+			var hash = window.location.hash.slice(2) ;
+			$('div[data-project="' + hash + '"]').trigger('click');
+		}
+
 	};
 
 	return {

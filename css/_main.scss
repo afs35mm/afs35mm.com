@@ -223,7 +223,7 @@ html, body, #wrapper {background: $grey;}
 	    				background-color: rgba(255, 255, 255, 0.3);
 	    				color:#fff;
 	    				text-shadow: 1px 1px 2px #000;
-					}
+					} 
 				}
 			}
 		}
@@ -233,9 +233,12 @@ html, body, #wrapper {background: $grey;}
 	height:4em;
 	width:100%;
 	background: $black;
+	#signature{
+		
+	}
 }
 /**
-XXL LAYOUT - 4 COLUMNS
+XXL LAYOUT - 4 COLUMNS 
 **/
 @media screen and (min-width: 1020px) {
 	#wrapper{

@@ -14,6 +14,8 @@ AFS.inject = (function(){
 	 
 	 	if(projectID == undefined || projectID == config.currentProject) return;
 
+	 	window.location.hash = '!' + projectID;
+
 	 	if(!config.stageOpen){
 	 		toggleStage();
 	 		injectTemplate(projectID);

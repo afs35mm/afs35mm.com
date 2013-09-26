@@ -23,7 +23,7 @@
         <!-- <canvas id="canvas"></canvas> -->
         
         <div id="head" class="clearfix">
-            <a href="/">
+            <!-- <a href="/">
             <?xml version="1.0" encoding="utf-8"?>
                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                 <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
@@ -41,7 +41,7 @@
                 <h3>NYC</h3>
             </div>
             
-            </div>
+            </div> -->
         </div>
         
         <div id="wrapper">
@@ -62,7 +62,9 @@
                                 <li>{{this}}</li>
                             {{/each}}
                         </ul>
-                        <a target="_blank" href="{{link}}">Visit Project</a>
+                        {{#if link}}
+                            <a target="_blank" href="{{link}}">Visit Project</a>
+                        {{/if}}
                         <div>
                             {{#each images}}
                                 <img src="{{this}}" />
@@ -76,7 +78,7 @@
                     <div class="item about">
                         <div class="box">
                             <div id="content">
-                                <h2>The Online Office of <strong>Andrew Schorr</strong></h2>    
+                                <!-- <h2>The Online Office of <strong>Andrew Schorr</strong></h2>     -->
                             </div>
                             
                         </div> 
@@ -138,28 +140,28 @@
                             <img src="http://placekitten.com/800/800" alt="">
                         </div>
                     </div>
-                    <div class="item projectItem">
+                    <div class="item projectItem" data-project="goya">
                          <div class="bg">
-                            <h5>XYZ ABC1234</h5>
-                            <h6>superfagilistic</h6>    
+                            <h5>Goya Foods</h5>
+                            <h6>Public Website</h6>    
                         </div>
                         <div class="box">
                             <img src="http://placekitten.com/42/34" alt="">
                         </div>
                     </div>
-                    <div class="item projectItem">
+                    <div class="item projectItem" data-project="homeagain">
                          <div class="bg">
-                            <h5>XYZ ABC1234</h5>
-                            <h6>superfagilistic</h6>    
+                            <h5>HomeAgain</h5>
+                            <h6>Petfinder Website</h6>    
                         </div>
                         <div class="box">
                             <img src="http://placekitten.com/121/142" alt="">
                         </div>
                     </div>
-                    <div class="item projectItem">
+                    <div class="item projectItem" data-project="corperate">
                          <div class="bg">
-                            <h5>XYZ ABC1234</h5>
-                            <h6>superfagilistic</h6>    
+                            <h5>Corperate Website</h5>
+                            <h6>Various</h6>    
                         </div>
                         <div class="box">
                             <img src="http://placekitten.com/245/625" alt="">
@@ -169,7 +171,7 @@
             </div>
         </div>
         <div id="footer">
-            
+            <img id="signature" src="img/signature.gif" alt="">
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -231,7 +231,7 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
-/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -811,7 +811,14 @@ html, body, #wrapper {
         padding-bottom: 3%; }
       #wrapper #stage #inner h6 {
         font-size: 1em;
-        padding-bottom: 3%; }
+        padding-bottom: 3%;
+        line-height: 1.2em; }
+        #wrapper #stage #inner h6 a {
+          background: transparent;
+          color: #191919;
+          font-size: 1em;
+          text-decoration: underline;
+          text-transform: none; }
       #wrapper #stage #inner ul {
         padding-bottom: 3%; }
         #wrapper #stage #inner ul li {
@@ -863,13 +870,13 @@ html, body, #wrapper {
             -webkit-transition: margin-top 0.5s ease;
             -moz-transition: margin-top 0.5s ease;
             -o-transition: margin-top 0.5s ease; }
-          #wrapper #main #container .item .bg h3 {
+          #wrapper #main #container .item .bg h5 {
             font-weight: 700;
             font-size: 1em;
             padding-bottom: .2em; }
-          #wrapper #main #container .item .bg h4 {
+          #wrapper #main #container .item .bg h6 {
             font-size: .8em; }
-        #wrapper #main #container .item .box * {
+        #wrapper #main #container .item .box img {
           position: absolute;
           z-index: 10;
           top: 0;
@@ -880,10 +887,16 @@ html, body, #wrapper {
           padding-top: 75%;
           content: "";
           display: block; }
-        #wrapper #main #container .item.doubleSize {
+        #wrapper #main #container .item.about {
           width: 66%; }
+          #wrapper #main #container .item.about #content {
+            top: 3em;
+            left: 3em;
+            position: absolute; }
+            #wrapper #main #container .item.about #content h2 strong {
+              font-weight: 800; }
         #wrapper #main #container .item.h2 .box:before {
-          padding-top: 152%; }
+          padding-top: 151%; }
         #wrapper #main #container .item.hover .bg {
           margin-top: 0; }
         #wrapper #main #container .item.projectItem {
@@ -907,7 +920,7 @@ XXL LAYOUT - 4 COLUMNS
 @media screen and (min-width: 1020px) {
   #wrapper #main #container .item {
     width: 25%; }
-    #wrapper #main #container .item.doubleSize {
+    #wrapper #main #container .item.about {
       width: 50%; } }
 /**
 SM LAYOUT - 2 COLUMNS
@@ -915,5 +928,17 @@ SM LAYOUT - 2 COLUMNS
 @media screen and (max-width: 720px) {
   #wrapper #main #container .item {
     width: 50%; }
-    #wrapper #main #container .item.doubleSize {
+    #wrapper #main #container .item.about {
       width: 50%; } }
+/**
+XX SM LAYOUT - 1 COLUMNS
+**/
+@media screen and (max-width: 420px) {
+  #wrapper #stage {
+    font-size: .8em; }
+  #wrapper #main #container .item {
+    width: 100%; }
+    #wrapper #main #container .item.about {
+      width: 100%; }
+    #wrapper #main #container .item.h2 .box:before {
+      padding-top: 75%; } }

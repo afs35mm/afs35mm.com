@@ -95,6 +95,14 @@ html, body, #wrapper {background: $grey;}
 			h6{
 				font-size:1em;
 				padding-bottom:$padding-bottom;
+				line-height:1.2em;
+				a{
+					background:transparent;
+					color: $black;
+					font-size:1em;
+					text-decoration: underline;
+					text-transform: none;
+				}
 			}
 			ul{
 				padding-bottom:$padding-bottom;	
@@ -160,16 +168,16 @@ html, body, #wrapper {background: $grey;}
 					    -moz-transition: margin-top 0.5s ease; 
 					    -o-transition: margin-top 0.5s ease;
 				    }
-					h3{
+					h5{
 						font-weight:700;
 						font-size:1em;
 						padding-bottom:.2em;
 					}
-					h4{
+					h6{
 						font-size:.8em;
 					}
 				}
-				.box *{
+				.box img {
 					position: absolute;
 					z-index:10;
 					top: 0;
@@ -183,12 +191,22 @@ html, body, #wrapper {background: $grey;}
 					content: "";
 					display: block;
 				}
-				&.doubleSize{
-					width:  66%;
+				&.about{
+					width: 66%;
+					#content{
+						top:3em;
+						left:3em;
+						position:absolute;
+						h2{
+							strong{
+								font-weight:800;
+							}
+						}
+					}
 				}
 				&.h2{
 					.box:before {
-						padding-top: 152%; 
+						padding-top: 151%; 
 					}
 				}
 				
@@ -225,7 +243,7 @@ XXL LAYOUT - 4 COLUMNS
 			#container{
 				.item{
 					width: 25%;
-					&.doubleSize {
+					&.about {
 						width: 50%;
 					}
 				}
@@ -243,8 +261,34 @@ SM LAYOUT - 2 COLUMNS
 			#container{
 				.item{
 					width: 50%;
-					&.doubleSize {
+					&.about {
 						width: 50%;
+					}
+				}
+			}
+		}
+	} 
+}  
+
+/**
+XX SM LAYOUT - 1 COLUMNS
+**/
+@media screen and (max-width: 420px) {
+	#wrapper{
+		#stage{
+			font-size:.8em;
+		}
+		#main{
+			#container{
+				.item{
+					width: 100%;
+					&.about {
+						width: 100%;
+					}
+					&.h2{
+						.box:before {
+							padding-top: 75%; 
+						}
 					}
 				}
 			}

@@ -34,7 +34,6 @@ html, body, #wrapper {background: $grey;}
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 	#logo{
-		
 		bottom: 0;
 		left: 0;
 		margin: auto 1%;
@@ -197,11 +196,26 @@ html, body, #wrapper {background: $grey;}
 						top:3em;
 						left:3em;
 						position:absolute;
+						padding-right:3em;
 						h2{
+							font-size:1.6em;
+							padding-bottom:0.8em;
 							strong{
 								font-weight:800;
 							}
 						}
+						h3{
+							font-size:1.2em;
+						}
+					}
+					#hitmeup{
+						position:absolute;
+						right:3em;
+						bottom:3em;
+						background:red;
+					}
+					a{
+						color:$black;
 					}
 				}
 				&.h2{
@@ -233,8 +247,14 @@ html, body, #wrapper {background: $grey;}
 	height:4em;
 	width:100%;
 	background: $black;
+	position:relative;
 	#signature{
-		
+		padding-left: 1%;
+		margin: auto;
+		height:36px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
 	}
 }
 /**

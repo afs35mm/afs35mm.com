@@ -892,9 +892,22 @@ html, body, #wrapper {
           #wrapper #main #container .item.about #content {
             top: 3em;
             left: 3em;
-            position: absolute; }
-            #wrapper #main #container .item.about #content h2 strong {
-              font-weight: 800; }
+            position: absolute;
+            padding-right: 3em; }
+            #wrapper #main #container .item.about #content h2 {
+              font-size: 1.6em;
+              padding-bottom: 0.8em; }
+              #wrapper #main #container .item.about #content h2 strong {
+                font-weight: 800; }
+            #wrapper #main #container .item.about #content h3 {
+              font-size: 1.2em; }
+          #wrapper #main #container .item.about #hitmeup {
+            position: absolute;
+            right: 3em;
+            bottom: 3em;
+            background: red; }
+          #wrapper #main #container .item.about a {
+            color: #191919; }
         #wrapper #main #container .item.h2 .box:before {
           padding-top: 151%; }
         #wrapper #main #container .item.hover .bg {
@@ -912,7 +925,15 @@ html, body, #wrapper {
 #footer {
   height: 4em;
   width: 100%;
-  background: #191919; }
+  background: #191919;
+  position: relative; }
+  #footer #signature {
+    padding-left: 1%;
+    margin: auto;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
 
 /**
 XXL LAYOUT - 4 COLUMNS 

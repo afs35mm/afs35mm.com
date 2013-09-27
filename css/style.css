@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -231,7 +231,7 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
-/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -889,6 +889,10 @@ html, body, #wrapper {
           display: block; }
         #wrapper #main #container .item.about {
           width: 66%; }
+          #wrapper #main #container .item.about img {
+            width: auto;
+            max-width: auto;
+            position: relative; }
           #wrapper #main #container .item.about #content {
             top: 3em;
             left: 3em;
@@ -905,11 +909,22 @@ html, body, #wrapper {
             position: absolute;
             right: 3em;
             bottom: 3em;
-            background: red; }
+            text-align: right; }
+            #wrapper #main #container .item.about #hitmeup p {
+              display: block;
+              padding-bottom: 1em; }
+            #wrapper #main #container .item.about #hitmeup ul {
+              display: block; }
+              #wrapper #main #container .item.about #hitmeup ul li {
+                margin: 0 0 0 .4em;
+                display: block;
+                float: left; }
           #wrapper #main #container .item.about a {
             color: #191919; }
         #wrapper #main #container .item.h2 .box:before {
           padding-top: 151%; }
+        #wrapper #main #container .item.h2 img {
+          padding-top: 40%; }
         #wrapper #main #container .item.hover .bg {
           margin-top: 0; }
         #wrapper #main #container .item.projectItem {
@@ -950,7 +965,8 @@ SM LAYOUT - 2 COLUMNS
   #wrapper #main #container .item {
     width: 50%; }
     #wrapper #main #container .item.about {
-      width: 50%; } }
+      width: 50%;
+      font-size: .8em; } }
 /**
 XX SM LAYOUT - 1 COLUMNS
 **/
@@ -962,4 +978,6 @@ XX SM LAYOUT - 1 COLUMNS
     #wrapper #main #container .item.about {
       width: 100%; }
     #wrapper #main #container .item.h2 .box:before {
-      padding-top: 75%; } }
+      padding-top: 75%; }
+    #wrapper #main #container .item.h2 img {
+      padding-top: 0; } }

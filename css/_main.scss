@@ -192,6 +192,11 @@ html, body, #wrapper {background: $grey;}
 				}
 				&.about{
 					width: 66%;
+					img{
+						width:auto;
+						max-width:auto;
+						position:relative;
+					}
 					#content{
 						top:3em;
 						left:3em;
@@ -212,7 +217,23 @@ html, body, #wrapper {background: $grey;}
 						position:absolute;
 						right:3em;
 						bottom:3em;
-						background:red;
+						//background:red;
+						text-align:right;
+						p{
+							display:block;
+							padding-bottom:1em;
+						}
+						ul{
+							display:block;
+							li{
+								margin: 0 0 0 .4em;
+								display:block; 
+								float:left;
+								a{
+
+								}
+							}
+						}
 					}
 					a{
 						color:$black;
@@ -221,6 +242,9 @@ html, body, #wrapper {background: $grey;}
 				&.h2{
 					.box:before {
 						padding-top: 151%; 
+					}
+					img{
+						padding-top:40%;
 					}
 				}
 				
@@ -286,6 +310,7 @@ SM LAYOUT - 2 COLUMNS
 					width: 50%;
 					&.about {
 						width: 50%;
+						font-size:.8em;
 					}
 				}
 			}
@@ -311,6 +336,9 @@ XX SM LAYOUT - 1 COLUMNS
 					&.h2{
 						.box:before {
 							padding-top: 75%; 
+						}
+						img{
+							padding-top:0;
 						}
 					}
 				}

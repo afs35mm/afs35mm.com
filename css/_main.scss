@@ -33,18 +33,23 @@ html, body, #wrapper {background: $grey;}
     background-color: rgba(0, 0, 0, 0.8);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-	#logo{
-		bottom: 0;
-		left: 0;
-		margin: auto 1%;
-		position: absolute; 
-		top: 0;
+	a{
+		display:inline-block;
+		margin:  0.7em 1%;
+		#logo{
+			bottom: 0;
+			left: 0;
+			position: relative; 
+			top: 0;
+		}	
 	}	
 	h1{
 		font-size:1.3em;
-		padding: 1.8em 0 0 4.5em;
+		//padding: 1.8em 0 0 4.5em;
+		padding: 1.8461em 0 1em 0;
 		color:$white;
 		display:inline-block;
+		vertical-align:top;
 	}
 	.container{
 		float: right;
@@ -104,7 +109,7 @@ html, body, #wrapper {background: $grey;}
 				}
 			}
 			ul{
-				padding-bottom:$padding-bottom;	
+				padding-bottom:$padding-bottom;	 
 				li{
 					display:inline;
 					margin: 0 .4em 0 0;
@@ -303,7 +308,17 @@ XXL LAYOUT - 4 COLUMNS
 SM LAYOUT - 2 COLUMNS
 **/
 @media screen and (max-width: 720px) {
+	#head{
+		font-size:.8em;
+		#logo{
+			width:48px;
+			height:48px;
+		}
+	} 
 	#wrapper{
+		#padder{
+		font-size:.8em;		
+		}
 		#main{
 			#container{
 				.item{
@@ -322,6 +337,9 @@ SM LAYOUT - 2 COLUMNS
 XX SM LAYOUT - 1 COLUMNS
 **/
 @media screen and (max-width: 420px) {
+	#head{
+		//font-size:.6em;
+	}
 	#wrapper{
 		#stage{
 			font-size:.8em;

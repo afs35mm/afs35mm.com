@@ -939,6 +939,8 @@ html, body, #wrapper {
             background-color: rgba(255, 255, 255, 0.3);
             color: #fff;
             text-shadow: 1px 1px 2px #000; }
+        #wrapper #main #container .item.verizon {
+          background: #d80000; }
 
 #footer {
   height: 4em;

@@ -11,12 +11,12 @@ AFS.projects = {
 			'JavaScript', 
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/verizon_1.png',
-			'https://s3.amazonaws.com/afs35mm/verizon_2.jpg',
-			'https://s3.amazonaws.com/afs35mm/verizon_3.jpg',
-			'https://s3.amazonaws.com/afs35mm/verizon_4.jpg',
-			'https://s3.amazonaws.com/afs35mm/verizon_5.jpg',
-			'https://s3.amazonaws.com/afs35mm/verizon_6.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/verizon_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/verizon_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/verizon_3.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/verizon_4.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/verizon_5.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/verizon_6.jpg',
 		]
 	},
 	olympus :{
@@ -30,12 +30,12 @@ AFS.projects = {
 			'PHP' 
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/olympus_1.png',
-			'https://s3.amazonaws.com/afs35mm/olympus_2.png',
-			'https://s3.amazonaws.com/afs35mm/olympus_3.jpg',
-			'https://s3.amazonaws.com/afs35mm/olympus_4.jpg',
-			'https://s3.amazonaws.com/afs35mm/olympus_5.jpg',
-			'https://s3.amazonaws.com/afs35mm/olympus_6.png',
+			'https://s3.amazonaws.com/afs35mm.com/olympus_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/olympus_2.png',
+			'https://s3.amazonaws.com/afs35mm.com/olympus_3.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/olympus_4.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/olympus_5.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/olympus_6.png',
 		]
 	},
 	fireworks :{
@@ -48,11 +48,11 @@ AFS.projects = {
 			'Canvas' 
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/fireworks_1.png',
-			'https://s3.amazonaws.com/afs35mm/fireworks_2.jpg',
-			'https://s3.amazonaws.com/afs35mm/fireworks_3.jpg',
-			'https://s3.amazonaws.com/afs35mm/fireworks_4.jpg',
-			'https://s3.amazonaws.com/afs35mm/fireworks_5.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/fireworks_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/fireworks_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/fireworks_3.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/fireworks_4.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/fireworks_5.jpg',
 		]
 	},
 	moodcastr :{
@@ -65,7 +65,7 @@ AFS.projects = {
 			'APIs' 
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/moodcastr.png',
+			'https://s3.amazonaws.com/afs35mm.com/moodcastr.png',
 		]
 	},
 	ezfade :{
@@ -77,9 +77,9 @@ AFS.projects = {
 			'jQuery' 
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/ezfade_1.png',
-			'https://s3.amazonaws.com/afs35mm/ezfade_2.jpg',
-			'https://s3.amazonaws.com/afs35mm/ezfade_3.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/ezfade_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/ezfade_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/ezfade_3.jpg',
 		]
 	},
 	jeide :{
@@ -93,8 +93,8 @@ AFS.projects = {
 			'Project Manager(?)',
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/jeide_1.png',
-			'https://s3.amazonaws.com/afs35mm/jeide_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/jeide_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/jeide_2.jpg',
 			
 		]
 	},
@@ -109,9 +109,9 @@ AFS.projects = {
 			'Email Production',
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/goya_1.png',
-			'https://s3.amazonaws.com/afs35mm/goya_2.jpg',
-			'https://s3.amazonaws.com/afs35mm/goya_3.png',
+			'https://s3.amazonaws.com/afs35mm.com/goya_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/goya_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/goya_3.png',
 			
 		]
 	},
@@ -126,9 +126,9 @@ AFS.projects = {
 			'Email Production',
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/homeagain_1.png',
-			'https://s3.amazonaws.com/afs35mm/homeagain_2.jpg',
-			'https://s3.amazonaws.com/afs35mm/homeagain_3.png'
+			'https://s3.amazonaws.com/afs35mm.com/homeagain_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/homeagain_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/homeagain_3.png'
 			
 		]
 	},
@@ -144,11 +144,11 @@ AFS.projects = {
 			'Client Services(?)',
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm/corperate_1.png',
-			'https://s3.amazonaws.com/afs35mm/corperate_2.jpg',
-			'https://s3.amazonaws.com/afs35mm/corperate_5.jpg',
-			'https://s3.amazonaws.com/afs35mm/corperate_3.jpg',
-			'https://s3.amazonaws.com/afs35mm/corperate_4.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/corperate_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/corperate_2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/corperate_5.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/corperate_3.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/corperate_4.jpg',
 		]
 	},
 };

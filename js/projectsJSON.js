@@ -151,5 +151,17 @@ AFS.projects = {
 			'https://s3.amazonaws.com/afs35mm.com/corperate_4.jpg',
 		]
 	},
+	dateShruti :{
+		name: 'Date Shruti',
+		description: "Custom web app developed for Shruti. Gives users a 'date-eligibility rank' based on super-scientific answers to predetermined questions, and if users are lucky enouh to scored within certain range allows them to schedule an (actual) date. Codeigniter PHP framework and handlebars templating used. ",
+		roles: [
+			'Development'
+		],
+		images: [
+			'https://s3.amazonaws.com/afs35mm.com/ds1.png',
+			'https://s3.amazonaws.com/afs35mm.com/ds2.jpg',
+			'https://s3.amazonaws.com/afs35mm.com/ds3.jpg'
+		]
+	},
 };
 

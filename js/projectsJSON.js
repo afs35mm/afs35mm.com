@@ -133,8 +133,8 @@ AFS.projects = {
 		]
 	},
 	corperate :{
-		name: 'Corperate Websites',
-		description: "Various Websites for select clients. Served all roles from inception to completion of sites.",
+		name: 'Corporate Websites',
+		description: "Various Websites for select clients.",
 		roles: [
 			'UX',
 			'Design',
@@ -144,10 +144,12 @@ AFS.projects = {
 			'Client Services(?)',
 		],
 		images: [
-			'https://s3.amazonaws.com/afs35mm.com/corperate_1.png',
+			'https://s3.amazonaws.com/afs35mm.com/corporate_0.5.png',
+			'https://s3.amazonaws.com/afs35mm.com/corporate_0.6.png',
+			// 'https://s3.amazonaws.com/afs35mm.com/corperate_1.png',
 			'https://s3.amazonaws.com/afs35mm.com/corperate_2.jpg',
 			'https://s3.amazonaws.com/afs35mm.com/corperate_5.jpg',
-			'https://s3.amazonaws.com/afs35mm.com/corperate_3.jpg',
+			// 'https://s3.amazonaws.com/afs35mm.com/corperate_3.jpg',
 			'https://s3.amazonaws.com/afs35mm.com/corperate_4.jpg',
 		]
 	},

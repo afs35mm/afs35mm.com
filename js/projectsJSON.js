@@ -132,6 +132,18 @@ AFS.projects = {
 			
 		]
 	},
+	gHeight :{
+		name: 'gHeight',
+		description: "Google Maps API x ThreeJS Mashup that lets you pick two places on earth, and displays the elevation path across points on ThreeJS Canvas element.",
+		link: 'http://gheight.afs35mm.com/',
+		roles: [
+			'Dev',
+			'Design',
+		],
+		images: [
+			'https://s3.amazonaws.com/afs35mm.com/gheight.png',
+		]
+	},
 	corperate :{
 		name: 'Corporate Websites',
 		description: "Various Websites for select clients.",
